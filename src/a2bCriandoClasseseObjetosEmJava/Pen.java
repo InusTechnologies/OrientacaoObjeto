@@ -8,10 +8,13 @@ public class Pen {
     float ponta;
     int carga;
     boolean tampada;
-
-    /*MÉTODOS
-     * void significa sem retorno
-     */
+    void status(){
+        System.out.println("One pen "+ this.cor);
+        System.out.println("Está tampada "+ this.tampada);
+        System.out.println("Qual o valor de sua ponta? "+ this.ponta);
+        System.out.println("Qual a sua carga? "+ this.carga);
+        System.out.println("Qual seu modelo? "+ this.modelo);
+    }
 
     void rabiscar(){
 

@@ -29,12 +29,12 @@ package a2bCriandoClasseseObjetosEmJava;
  *                  Escreva("ERRO")             *   c1.ponta = 0.5
  *              senao                           *   c1.tampada = falso
  *                  Escreva ("Rabisco")         *
- *              FimSe                           *
- *          FIMMETODO                           *
- *          Metodo tampar()                     *
- *              tampada = verdadeiro            *
- *          FimMetodo                           *
- *        FimClasse                             *
+ *              FimSe                           *   Criar método para mostrar o status
+ *          FIMMETODO                           *   void status(){
+ *          Metodo tampar()                     *       sout("One pen " + this.cor);
+ *              tampada = verdadeiro            *    -> this significa auto referência
+ *          FimMetodo                           *       -> Quem chama o status será
+ *        FimClasse                             *           substituido por this.
  *                                              *
  * **********************************************
  */
@@ -45,5 +45,7 @@ public class CriandoClassesEObjetosEmJava {
             c1.cor = "Azul";
             c1.ponta = 0.5f;
             c1.tampada = false;
+            c1.modelo = "c3";
+            c1.status();
     }
 }
