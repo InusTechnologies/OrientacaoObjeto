@@ -44,7 +44,8 @@ public class CriandoClassesEObjetosEmJava {
             Pen c1 = new Pen();
             c1.cor = "Azul";
             c1.ponta = 0.5f;
-            c1.tampada = false;
+            //c1.tampada = false;
+            c1.tampar();
             c1.modelo = "c3";
             c1.status();
     }

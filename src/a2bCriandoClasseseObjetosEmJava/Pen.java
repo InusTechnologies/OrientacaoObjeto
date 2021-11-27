@@ -21,11 +21,12 @@ public class Pen {
     }
 
     void tampar(){
+            this.tampada = true;
 
     }
 
     void destampar(){
-
+            this.tampada = false;
     }
 
 
