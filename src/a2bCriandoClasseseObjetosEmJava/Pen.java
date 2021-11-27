@@ -8,7 +8,7 @@ public class Pen {
     float ponta;
     int carga;
     boolean tampada;
-    void status(){
+    public void status(){
         System.out.println("One pen "+ this.cor);
         System.out.println("Está tampada "+ this.tampada);
         System.out.println("Qual o valor de sua ponta? "+ this.ponta);
