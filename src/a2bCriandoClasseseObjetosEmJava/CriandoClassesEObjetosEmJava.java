@@ -15,7 +15,7 @@ package a2bCriandoClasseseObjetosEmJava;
  * 4. Como manipula seus atributos e seus métodos?
  * ----------------------------------------------------------------------------------
  *
- * 
+ *
  * ***************ALGORITMO**********************
  *                                              *
  *        Classe Caneta                         *
@@ -40,4 +40,7 @@ package a2bCriandoClasseseObjetosEmJava;
  */
 
 public class CriandoClassesEObjetosEmJava {
+    public static void main(String[] args) {            //Metodo main ou metoddo principal
+
+    }
 }
