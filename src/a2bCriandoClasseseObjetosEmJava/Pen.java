@@ -17,6 +17,12 @@ public class Pen {
     }
 
     void rabiscar(){
+        if(this.tampada == true){
+            System.out.println("erro sem rabisco;");
+        }
+        else {
+            System.out.println("rabiscando");
+        }
 
     }
 

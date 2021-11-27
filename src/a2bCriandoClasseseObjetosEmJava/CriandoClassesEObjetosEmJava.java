@@ -42,11 +42,21 @@ package a2bCriandoClasseseObjetosEmJava;
 public class CriandoClassesEObjetosEmJava {
     public static void main(String[] args) {
             Pen c1 = new Pen();
-            c1.cor = "Azul";
-            c1.ponta = 0.5f;
+            //c1.cor = "Azul";
+            //c1.ponta = 0.5f;
+            //c1.modelo = "c3";
+
             //c1.tampada = false;
             c1.tampar();
-            c1.modelo = "c3";
-            c1.status();
+            //c1.destampar();
+            c1.rabiscar();
+            //c1.status();
+
+            Pen c2 = new Pen();
+            c2.modelo = "indionis";
+            c2.cor = "preta";
+            c2.destampar();
+            c2.status();
+            c2.rabiscar();
     }
 }
