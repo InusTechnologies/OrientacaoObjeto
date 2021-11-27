@@ -16,18 +16,18 @@ package a2bCriandoClasseseObjetosEmJava;
  * ----------------------------------------------------------------------------------
  *
  *
- * ***************ALGORITMO**********************
+ * ***************ALGORITMO********************************INSTANCIAR**************************
  *                                              *
- *        Classe Caneta                         *
- *              modelo: Caractere -> String     *
- *              cor: Caractere -> String        *
- *              ponta: Real -> double           *
+ *        Classe Caneta                         *       c1 = nova Caneta
+ *              modelo: Caractere -> String     *   Instanciando objeto c1
+ *              cor: Caractere -> String        *   do tipo pen
+ *              ponta: Real -> double           *   classse vai na frente
  *              carga: inteiro -> int           *
- *              tampada: Logico -> boolean      *
- *          METODO rabiscar()                   *
- *              Se(tampada) então               *
- *                  Escreva("ERRO")             *
- *              senao                           *
+ *              tampada: Logico -> boolean      *   Agora posso mexer nos atributos
+ *          METODO rabiscar()                   *   c1 =nova Caneta
+ *              Se(tampada) então               *   c1.cor = "Azul"
+ *                  Escreva("ERRO")             *   c1.ponta = 0.5
+ *              senao                           *   c1.tampada = falso
  *                  Escreva ("Rabisco")         *
  *              FimSe                           *
  *          FIMMETODO                           *
@@ -40,7 +40,10 @@ package a2bCriandoClasseseObjetosEmJava;
  */
 
 public class CriandoClassesEObjetosEmJava {
-    public static void main(String[] args) {            //Metodo main ou metoddo principal
-
+    public static void main(String[] args) {
+            Pen c1 = new Pen();
+            c1.cor = "Azul";
+            c1.ponta = 0.5f;
+            c1.tampada = false;
     }
 }
