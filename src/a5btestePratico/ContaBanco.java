@@ -76,9 +76,20 @@ public class ContaBanco {
 //        else {
 //            System.out.println("Conta fechada");
 //        }
-//    }
-    public void sacarConta(){
-    }
+//    } //ERRO NO ELSE!
+    public void sacarConta(float v){
+        if (this.getStatus()) {
+            if (this.getSaldo() >= v) {
+                this.setSaldo(this.getSaldo() - v);
+                System.out.println("saque da conta de " + this.getDono());
+            } else {
+                System.out.println("Saldo insuficiente!");
+            }
+        } else {
+            System.out.println("Conta fechada");
+            }
+        }
+
     public void pagarMensal(){
     }
 
@@ -123,7 +134,7 @@ public class ContaBanco {
         this.saldo = saldo;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 
