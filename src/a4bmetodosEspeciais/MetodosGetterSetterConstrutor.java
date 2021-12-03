@@ -7,6 +7,9 @@ public class MetodosGetterSetterConstrutor {
 //        c1.modelo = "bicristal"; // acessou diretamente o atributo
 //        c1.setPonta(0.5f); //Caso peça double coloca f no final
         c1.status();
+        Caneta c2 = new Caneta(" 2 NIC ", " ROSA ", 0.1001F);
+        c2.status();
+
 
 
     }
