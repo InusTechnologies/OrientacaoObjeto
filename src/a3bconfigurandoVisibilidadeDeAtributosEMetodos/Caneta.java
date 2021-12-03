@@ -20,7 +20,7 @@ package a3bconfigurandoVisibilidadeDeAtributosEMetodos;
  *
  */
 
-    public class Caneta {
+    public class  Caneta {
 
         //ATRIBUTOS
         public String modelo;
