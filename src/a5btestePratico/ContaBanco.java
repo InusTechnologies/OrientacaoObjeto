@@ -22,7 +22,17 @@
 //        publico Metodo pagarMensal()
 //        (...)
 //        FimMetodo
-//        FimClasse
+////        FimClasse
+//         METODOS
+//    publico Metodo abrirConta(t: Caractere)
+//       setTipo(t)
+//       setStatus(verdadeiro)
+//       se (t = "CC") ENTÃO
+//            saldo = 50
+//       senao se (t = "CP") entao
+//        saldo = 150
+//       FimSe
+//   FimMetodo
 
 
 package a5btestePratico;
@@ -34,18 +44,50 @@ public class ContaBanco {
     private float saldo;
     private boolean status;
 
-    public void abrirConta() {
+    public void abrirConta(String tipo) {
+        this.setTipo(tipo);
+        this.setStatus(true);
+        if (tipo == "CC"){
+            //this.saldo = 50;
+            this.setSaldo(50);
+
+        } else if (tipo == "CP"){
+            //this.saldo = 150;
+            this.setSaldo(150);
+        }
     }
     public void fecharConta(){
+        if (this.getSaldo()>0){
+            System.out.println("Conta com saldo");
+        } else if (this.getSaldo()<0){
+            System.out.println("Conta negativa");
+        }
+        else{
+            this.setStatus(false);
+            System.out.println("Conta fechada com sucesso!");
+        }
     }
-    public void depositarConta(){
-    }
+//    public void depositarConta(float v){
+//        if (this.isStatus());{
+//        //this.saldo = this.saldo + v;
+//        this.setSaldo(this.getSaldo() + v);
+//            System.out.println("Deposito realizado cm sucesso na conta de " + this.getDono());
+//        }
+//        else {
+//            System.out.println("Conta fechada");
+//        }
+//    }
     public void sacarConta(){
     }
     public void pagarMensal(){
     }
 
     public ContaBanco(){
+        //this.saldo = 0;
+        //this.status = false;
+        this.setSaldo(0);
+        this.setStatus(false);
+
 
     }
 
