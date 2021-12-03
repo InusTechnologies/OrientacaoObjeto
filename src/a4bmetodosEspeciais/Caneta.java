@@ -39,10 +39,12 @@ public class Caneta {
     private String cor;
     private boolean tampada;
 
-    //Colocando construtores executa tarefas assim que o metodo é instanciado tem o mesmo nome que a classe
-    public Caneta(){ // metodo construtor é sem void
+    public Caneta(String m, String c, float p){
+        this.modelo = m;
+        this.setPonta(p); //pode ser feito com metodos modificadores
+        this.cor = c;
         this.tampar();
-        this.cor = "azul";
+
     }
 
     public String getModelo() {
