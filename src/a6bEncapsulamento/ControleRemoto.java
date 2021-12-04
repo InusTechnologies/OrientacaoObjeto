@@ -30,5 +30,9 @@ public class ControleRemoto {
     private boolean ligado;
     private boolean tocando;
 
+    //Metódos especiais construtor
 
+
+    public ControleRemoto() { // Metodo construtor sem parametro nenhum
+    }
 }
