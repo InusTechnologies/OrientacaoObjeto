@@ -25,4 +25,10 @@
 package a6bEncapsulamento;
 
 public class ControleRemoto {
+    //atributos
+    private int volume;
+    private boolean ligado;
+    private boolean tocando;
+
+
 }
