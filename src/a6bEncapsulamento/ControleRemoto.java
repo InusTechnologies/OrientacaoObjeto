@@ -73,23 +73,34 @@ public class ControleRemoto implements Controlador {
         this.tocando = tocando;
     }
 
-    @Override
+
+
+    // **********METODOS ABSTRATOS***************
+
+    @Override  //Override significa sobreescrever
     public void ligar() {
+        this.setLigado(true);
 
     }
 
-    @Override
+    @Override //#########Dúvida#########
     public void desligar() {
-
+        this.setLigado(false);
     }
 
     @Override
     public void abrirMenu() {
-
+        System.out.println("Está ligado? "+ this.getLigado());
+        System.out.println("Está tocando? "+ this.getTocando());
+        System.out.println("VOLUME: "+ this.getVolume());
+        for (int i =0; i<=this.getVolume(); i+=10){
+            System.out.println("|");
+        }
     }
 
     @Override
     public void fecharMenu() {
+        System.out.println("Fechando Menu...");
 
     }
 
