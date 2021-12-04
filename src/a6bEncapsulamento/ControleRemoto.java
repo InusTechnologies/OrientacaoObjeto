@@ -109,6 +109,8 @@ public class ControleRemoto implements Controlador {
     public void maisVolume() {
         if (this.getLigado()){
             this.setVolume(this.getVolume() +1);
+        }else{
+            System.out.println("Impossivel");
         }
 
     }
@@ -117,7 +119,10 @@ public class ControleRemoto implements Controlador {
     public void menosVolume() {
         if (this.getLigado()){
             this.setVolume(this.getVolume() -1);
+        }else{
+            System.out.println("Impossivel");
         }
+
 
 
     }
