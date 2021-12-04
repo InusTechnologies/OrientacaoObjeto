@@ -48,8 +48,12 @@ public class ControleRemoto {
     public void setVolume(int volume) {
         this.volume = volume;
     }
+//
+//    public boolean isLigado() {//Sempre que for boolean ele não faz set ligado ele faz it ligado. RENOMEANDO
+//        return ligado;
+//    }
 
-    public boolean isLigado() {
+    public boolean getLigado() {
         return ligado;
     }
 
@@ -57,7 +61,11 @@ public class ControleRemoto {
         this.ligado = ligado;
     }
 
-    public boolean isTocando() {
+//    public boolean isTocando() {//Sempre que for boolean ele não faz set ligado ele faz it ligado. RENOMEANDO
+//        return tocando;
+//    }
+
+    public boolean getTocando() {
         return tocando;
     }
 
