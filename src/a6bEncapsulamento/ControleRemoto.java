@@ -33,7 +33,7 @@ public class ControleRemoto implements Controlador {
     //Metódos especiais construtor
 
 
-    public ControleRemoto() { // Metodo construtor sem parametro nenhum.
+     ControleRemoto() { // Metodo construtor sem parametro nenhum.
         this.volume = 50;
         this.ligado = false;
         this.tocando = false;
@@ -41,11 +41,11 @@ public class ControleRemoto implements Controlador {
 
     //\Metodos especiais getters e setters
 
-    public int getVolume() {
+    private int getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
+    private void setVolume(int volume) {
         this.volume = volume;
     }
 //
@@ -53,11 +53,11 @@ public class ControleRemoto implements Controlador {
 //        return ligado;
 //    }
 
-    public boolean getLigado() {
+    private boolean getLigado() {
         return ligado;
     }
 
-    public void setLigado(boolean ligado) {
+    private void setLigado(boolean ligado) {
         this.ligado = ligado;
     }
 
@@ -65,11 +65,11 @@ public class ControleRemoto implements Controlador {
 //        return tocando;
 //    }
 
-    public boolean getTocando() {
+    private boolean getTocando() {
         return tocando;
     }
 
-    public void setTocando(boolean tocando) {
+    private void setTocando(boolean tocando) {
         this.tocando = tocando;
     }
 
