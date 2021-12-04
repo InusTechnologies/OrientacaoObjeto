@@ -33,6 +33,9 @@ public class ControleRemoto {
     //Metódos especiais construtor
 
 
-    public ControleRemoto() { // Metodo construtor sem parametro nenhum
+    public ControleRemoto() { // Metodo construtor sem parametro nenhum.
+        this.volume = 50;
+        this.ligado = false;
+        this.tocando = false;
     }
 }
