@@ -39,7 +39,7 @@ public class ControleRemoto implements Controlador {
         this.tocando = false;
     }
 
-    //Metodos especiais getters e setters
+    //\Metodos especiais getters e setters
 
     public int getVolume() {
         return volume;
