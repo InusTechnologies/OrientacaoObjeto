@@ -35,7 +35,7 @@
 //   FimMetodo
 
 
-package a5btestePratico;
+package a5TestePratico;
 
 public class ContaBanco {
     public int numConta;

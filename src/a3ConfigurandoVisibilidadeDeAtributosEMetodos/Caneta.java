@@ -1,4 +1,4 @@
-package a3bconfigurandoVisibilidadeDeAtributosEMetodos;
+package a3ConfigurandoVisibilidadeDeAtributosEMetodos;
 
 /*
  ************************DIAGRAMA DE CLASSES*******************************

@@ -1,4 +1,4 @@
-package a2bCriandoClasseseObjetosEmJava;
+package a2CriandoClasseseObjetosEmJava;
 
 /**
  * 0. O que é um objeto,classe,atributo, método, estado,abstração.

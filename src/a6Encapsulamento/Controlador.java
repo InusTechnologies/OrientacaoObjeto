@@ -17,7 +17,7 @@
 */
 
 
-package a6bEncapsulamento;
+package a6Encapsulamento;
 public interface Controlador {
     public abstract void ligar(); //NEM SEMPRE É VOID PODE TER UM TIPO DE RETORNO
     public abstract void desligar();

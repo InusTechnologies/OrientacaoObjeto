@@ -26,7 +26,7 @@
 
 
 
-package a5btestePratico;
+package a5TestePratico;
 
 public class TestePratico {
     public static void main(String[] args) {

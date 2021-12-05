@@ -1,4 +1,4 @@
-package a2bCriandoClasseseObjetosEmJava;
+package a2CriandoClasseseObjetosEmJava;
 
 public class Pen {
 

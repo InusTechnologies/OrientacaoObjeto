@@ -1,4 +1,4 @@
-package a4bmetodosEspeciais;
+package a4MetodosEspeciais;
 
 public class MetodosGetterSetterConstrutor {
     public static void main(String[] args) {

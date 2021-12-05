@@ -22,7 +22,7 @@
 //                    |
 // -----------------------------------------------------------------------------------------------------------|
 
-package a6bEncapsulamento;
+package a6Encapsulamento;
 
 public class ControleRemoto implements Controlador {
     //atributos

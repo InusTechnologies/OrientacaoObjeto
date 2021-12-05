@@ -31,7 +31,7 @@
         * FimClasse
         */
 
-package a4bmetodosEspeciais;
+package a4MetodosEspeciais;
 
 public class Caneta {
     public String modelo;

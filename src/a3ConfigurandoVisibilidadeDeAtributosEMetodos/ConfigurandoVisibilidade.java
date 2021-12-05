@@ -1,6 +1,6 @@
 
 
-package a3bconfigurandoVisibilidadeDeAtributosEMetodos;
+package a3ConfigurandoVisibilidadeDeAtributosEMetodos;
 
 
 public class ConfigurandoVisibilidade {
