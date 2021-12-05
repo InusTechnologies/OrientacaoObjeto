@@ -67,7 +67,7 @@ public class Livro implements Publicacao {
     }
 
     @Override
-    public void folhear() {
+    public void folhear(int pagina) {
 
     }
 
