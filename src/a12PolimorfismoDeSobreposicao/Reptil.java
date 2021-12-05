@@ -1,6 +1,7 @@
 package a12PolimorfismoDeSobreposicao;
 
 public class Reptil extends Animal{
+    private String corEscama;
     @Override
     public void locomover() {
         System.out.println("Arrastando-se");
@@ -18,4 +19,5 @@ public class Reptil extends Animal{
         System.out.println("Som de reptil");
 
     }
+
 }
