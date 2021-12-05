@@ -1,4 +1,4 @@
-/*   classe Lutador            |            |Lutador        |    classe Lutador
+/*         classe Lutador      |            |Lutador        |
           ---------------------|            |-nome          |
           -nome:String         |            |-nacionalidade |
           -nacionalidade:String|            |-idade         |
@@ -10,23 +10,50 @@
           -derrotas:int        |            |-empates       |
           -empates:int         |            |-------------- |
           ---------------------             |+apresentar()  |
-          Métodos                           |+status()      |
+                                            |+status()      |
                                             |+ganharLuta()  |
-          publico metodo apresentar()       |+perderLuta()  |
-          (...)                             |+empatarLuta() |
-          fim metodo                        |===============|
-          publico metodo Status()
-          (...)
-          fim metodo
-          publico Metodo ganharLuta()
-          (...)
-          fim metodo
-          publico Metodo perderLuta()
-          (...)
-          fim metodo
-          publico Metodo empatarLuta()
-          (...)
+                                            |+perderLuta()  |
+                                            |+empatarLuta() |
+                                            |===============|
+
+
+       -------------------------------------------------------------
+       ************************MÉTODOS******************************
+       -------------------------------------------------------------
+
+            publico metodo apresentar()
+              Escreva("Lutador: ", getNome())
+              Escreva("Origem: ", geNacionalidade())
+              Escreva("Idade: ", getIdade() + "anos")
+              Escreva(getAltura(), "m de altura")
+              Escreva("Pesando", getPeso(), "Kg")
+              Escreva("Ganhou: ", getVitorias())
+              Escreva("Perdeu: ", getDerrotas())
+              Escreva("Empatou: ", getEmpates())
+            fim metodo
+            publico metodo Status()
+              Escreva(getNome())
+              Escreva("é um peso", geCategoria())
+              Escreva("Idade: ", getIdade() + "anos")
+              Escreva(getVitorias(), "vitorias")
+              Escreva(getDerrotas(), "derrotas")
+              Escreva(getEmpates(), "empates")
+            fim metodo
+            publico Metodo ganharLuta()
+              (...)
+            fim metodo
+            publico Metodo perderLuta()
+              (...)
+            fim metodo
+            publico Metodo empatarLuta()
+              (...)
         fim metodo
+
+
+
+
+
+
 
 
           ---------------------------------------------------------
@@ -112,6 +139,8 @@
           empates = empates
         fim metodo
 
+
+
   fimClasse
 
  */
@@ -133,9 +162,20 @@ public class Lutador {
 
     //METODOS PUBLICOS
     public void apresentar(){
-
+        System.out.println("============================================");
+        System.out.println("Apresentamos o lutador "+ this.getNome());
+        System.out.println("Diretamente de "+ this.getNacionalidade());
+        System.out.println("com "+ this.getIdade() + " anos e " + this.altura);
+        System.out.println("pesando " + this.getPeso() + "Kg");
+        System.out.println(this.getVitoria() + " vitorias ");
+        System.out.println(this.getDerrota() + " derrotas ");
+        System.out.println(this.getEmpate() + " empates ");
     }
     public void status(){
+        System.out.println(this.getNome() + " é um peso " + this.getCategoria());
+        System.out.println(" Ganhou " + this.getVitoria() + "vezes");
+        System.out.println(" Perdeu " + this.getDerrota() + "vezes");
+        System.out.println(" Empatou " + this.getEmpate() + "vezes");
 
     }
     public void ganharLuta(){
