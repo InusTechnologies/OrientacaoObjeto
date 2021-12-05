@@ -13,7 +13,22 @@ classe Luta
 
     publico metodo marcarLuta()
             (...)
-    fim metodo
+
+
+GETTERS E SETTERS
+
+        publico metodo marcarLuta(l1, l2: Lutador)
+            se (l1.getCategoria() = l2.getCategoria())
+                e (l1<>l2) então
+                aprovada = verdadeiro
+                desafiado = l1
+                desafiante = l2
+             então
+                aprovado = falso
+                desafiado = nulo
+                desafiante = nulo
+              fim se
+          fim metodo
 FimClasse
 */
 
