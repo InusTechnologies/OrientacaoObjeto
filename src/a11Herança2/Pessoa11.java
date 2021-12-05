@@ -33,6 +33,13 @@ public abstract class Pessoa11 {
         this.sexo = sexo;
     }
 
-
+    @Override
+    public String toString() {
+        return "Pessoa11{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", sexo='" + sexo + '\'' +
+                '}';
+    }
 }
 
