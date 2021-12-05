@@ -1,6 +1,6 @@
 package a9Exercicio;
 
-public class Livro {
+public class Livro implements Publicacao {
     private String titulo;
     private String autor;
     private int totPaginas;
@@ -42,8 +42,8 @@ public class Livro {
         this.leitor = leitor;
     }
 
-    @Override
-    public String detalhes() {
+
+    public String toString() {
         return "Livro{" +
                 "titulo='" + titulo + '\'' +
                 ", autor='" + autor + '\'' +
@@ -52,5 +52,25 @@ public class Livro {
                 ", aberto=" + aberto +
                 ", leitor=" + leitor +
                 '}';
+    }
+
+    @Override
+    public void abrir() {
+
+    }
+
+    @Override
+    public void fechar() {
+
+    }
+
+    @Override
+    public void folhear() {
+
+    }
+
+    @Override
+    public void avancarPag() {
+
     }
 }
