@@ -43,7 +43,7 @@ public class Livro {
     }
 
     @Override
-    public String toString() {
+    public String detalhes() {
         return "Livro{" +
                 "titulo='" + titulo + '\'' +
                 ", autor='" + autor + '\'' +
