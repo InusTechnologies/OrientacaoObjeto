@@ -12,4 +12,3 @@ public class Bolsista extends Aluno11{
         System.out.println(this.nome + "é bolsista ");
     }
 }
-.
