@@ -1,6 +1,6 @@
 package a10Herança1;
 
-public class Funcionario {
+public class Funcionario extends Pessoa{
 
     //ATRIBUTOS
     private String setor;
