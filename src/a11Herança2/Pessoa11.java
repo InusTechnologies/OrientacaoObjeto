@@ -5,6 +5,10 @@ public abstract class Pessoa11 {
     private int idade;
     private String sexo;
 
+    public void fazerAniversario(){
+        this.idade ++;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -29,8 +33,6 @@ public abstract class Pessoa11 {
         this.sexo = sexo;
     }
 
-    public void fazerAniversario(){
 
-    }
 }
 
