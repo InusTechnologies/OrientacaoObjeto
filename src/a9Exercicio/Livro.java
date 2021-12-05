@@ -68,11 +68,13 @@ public class Livro implements Publicacao {
 
     @Override
     public void folhear(int pagina) {
+        this.pagAtual = pagina;
 
     }
 
     @Override
     public void avancarPag() {
+        this.pagAtual++;
 
     }
 }
