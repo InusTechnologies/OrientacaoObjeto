@@ -1,4 +1,4 @@
-//     classe Lutador          |            |Lutador        |    classe Lutador
+//   classe Lutador            |            |Lutador        |    classe Lutador
 //        ---------------------|            |-nome          |
 //        -nome:String         |            |-nacionalidade |
 //        -nacionalidade:String|            |-idade         |
@@ -27,7 +27,92 @@
 //        publico Metodo empatarLuta()
 //        (...)
 //        fim metodo
-//     FimClasse
+//
+//
+//        ---------------------------------------------------------
+//        ----*********METODOS ESPECIAIS CONSTRUTOR**********------
+//        ---------------------------------------------------------
+//        publico metodo construtor(nome:String, nacionalidade:String
+//                                  idade:int, altura:float, peso: float,
+//                                vitorias:int, empates:int, derrotas:int)
+//              nome = nome
+//              nacionalidade = nacionalidade
+//              idade = idade
+//              altura = altura
+//              setPeso(peso)
+//              vitorias = vitorias
+//              empates = empates
+//              derrotas = derrotas
+//        fim metodo
+//
+//
+//        ----------------------------------------------------------
+//        --*********METODOS ESPECIAIS GETTERS E SETTERS**********--
+//        ----------------------------------------------------------
+//        publico metodo getNome()
+//          retorne nome
+//        fim metodo
+//        publico metodo setNome(nome:String)
+//          nome = nome
+//        fim metodo
+//
+//        publico metodo getNacionalidade()
+//          retorne nacionalidade
+//        fim metodo
+//        publico metodo setNacionalidade(nacionalidade:String)
+//          nacionalidade = nacionalidade
+//        fim metodo
+//
+//        publico metodo getIdade()
+//          retorne idade
+//        fim metodo
+//        publico metodo setIdade(idade:int)
+//          idade = idade
+//        fim metodo
+//
+//        publico metodo getAltura()
+//          retorne altura
+//        fim metodo
+//        publico metodo setAltura(altura:float)
+//          altura = altura
+//        fim metodo
+//
+//         publico metodo getPeso()
+//          retorne peso
+//        fim metodo
+//        publico metodo setPeso(peso:float)
+//          peso = peso
+//        fim metodo
+//
+//        publico metodo getCategoria()
+//          retorne categoria
+//        fim metodo
+//        publico metodo setCategoria(categoria:String)
+//          categoria = categoria
+//        fim metodo
+//
+//        publico metodo getVitorias()
+//          retorne vitorias
+//        fim metodo
+//        publico metodo setVitorias(vitorias:int)
+//          vitorias = vitorias
+//        fim metodo
+//
+//        publico metodo getDerrotas()
+//          retorne derrotas
+//        fim metodo
+//        publico metodo setDerrotas(derrotas:int)
+//          derrotas = derrotas
+//        fim metodo
+//
+//        publico metodo getEmpates()
+//          retorne empates
+//        fim metodo
+//        publico metodo setEmpates(empates:int)
+//          empates = empates
+//        fim metodo
+//
+
 // -----------------------------------------------------------------------------------------------------------|
 
 package a7ObjetosCompostos;
