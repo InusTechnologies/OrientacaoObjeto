@@ -114,18 +114,28 @@ public class Lutador {
     public float getPeso() {
         return peso;
     }
-
+    //Categoria não será utilizado do lado de fora, ficando restrito ao uso interno
     public void setPeso(float peso) {
         this.peso = peso;
-        this.setCategoria(); //Categoria não será utilizado do lado de fora, ficando restrito ao uso interno
+        this.setCategoria();
     }
 
     public String getCategoria() {
         return categoria;
     }
-
-    private void setCategoria() {//Categoria modifica automaticcamente quando faço atualização do peso
-        this.categoria = categoria;
+    //Categoria modifica automaticcamente quando faço atualização do peso
+    private void setCategoria() {
+        if (this.peso < 50){
+            this.categoria = "Invalido";
+        }else if (this.peso <= 70.0){
+            this.categoria = "Leve";
+        }else  if (this.peso <= 83.9 ){
+            this.categoria = "Médio";
+        }else if (this.peso <= 105.56){
+            this.categoria = "Pesado";
+        }else {
+            this.categoria = "Invalido";
+        }
     }
 
     public int getVitoria() {
