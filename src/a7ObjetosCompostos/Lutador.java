@@ -117,13 +117,14 @@ public class Lutador {
 
     public void setPeso(float peso) {
         this.peso = peso;
+        this.setCategoria(); //Categoria não será utilizado do lado de fora, ficando restrito ao uso interno
     }
 
     public String getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    private void setCategoria() {//Categoria modifica automaticcamente quando faço atualização do peso
         this.categoria = categoria;
     }
 
