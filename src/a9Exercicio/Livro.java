@@ -56,11 +56,13 @@ public class Livro implements Publicacao {
 
     @Override
     public void abrir() {
+        this.aberto = true;
 
     }
 
     @Override
     public void fechar() {
+        this.aberto = false;
 
     }
 
