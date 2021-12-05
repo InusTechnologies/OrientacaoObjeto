@@ -4,10 +4,10 @@ public class Professor extends Pessoa{
 
     //ATRIBUTOS
     private String especialidade;
-    private float salario;
+    private double salario;
 
     //METODOS
-    public void ReceberAumento(float aumento){
+    public void ReceberAumento(double aumento){
         this.salario += aumento;
 
     }
@@ -23,7 +23,7 @@ public class Professor extends Pessoa{
         this.especialidade = especialidade;
     }
 
-    public float getSalario() {
+    public double getSalario() {
         return salario;
     }
 
