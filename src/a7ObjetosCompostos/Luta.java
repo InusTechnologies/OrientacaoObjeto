@@ -34,6 +34,9 @@ FimClasse
 
 
 package a7ObjetosCompostos;
+
+import java.util.Random;
+
 public class Luta {
 
     //Atributos
@@ -53,13 +56,42 @@ public class Luta {
             this.aprovada = false;
             this.desafiado = null;
             this.desafiante = null;
-
         }
-
 
     }
     public void Lutar(){
+        if (this.aprovada){
+            System.out.println("*********DESAFIADO************");
+            this.desafiado.apresentar();
+            System.out.println("*********DESAFIANTE************");
+            this.desafiante.apresentar();
 
+            Random aleatorio = new Random();
+            int vencedor = aleatorio.nextInt(3);
+            System.out.println("*********** RESULTADO LUTA *************");
+            switch (vencedor){
+                case 0: //empate
+                    System.out.println("EMPATOU!");
+                    this.desafiado.empatarLuta();
+                    this.desafiante.empatarLuta();
+                break;
+
+                case 1: //vitoria desafiado
+                    System.out.println("Vitoria  do " +this.desafiado.getNome());
+                    this.desafiado.ganharLuta();
+                    this.desafiante.perderLuta();
+                break;
+
+                case 2: //vitoria desafiante
+                    System.out.println("Vitoria  do " +this.desafiante.getNome());
+                    this.desafiado.perderLuta();
+                    this.desafiante.ganharLuta();
+                    break;
+            }
+        }else{
+            System.out.println("A luta não acontecerá!");
+
+        }
     }
 
     //Metodos especiais

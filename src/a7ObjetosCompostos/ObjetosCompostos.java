@@ -23,5 +23,12 @@ public class ObjetosCompostos {
         lutador[4].status();
         lutador[5].apresentar();
         lutador[5].status();
+
+        Luta UFC01 = new Luta();
+        UFC01.marcarLuta(lutador[0],lutador[1] );
+        UFC01.Lutar();
+        lutador[0].status();
+        lutador[1].status();
+
     }
 }
