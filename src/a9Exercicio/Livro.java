@@ -42,5 +42,15 @@ public class Livro {
         this.leitor = leitor;
     }
 
-
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", totPaginas=" + totPaginas +
+                ", pagAtual=" + pagAtual +
+                ", aberto=" + aberto +
+                ", leitor=" + leitor +
+                '}';
+    }
 }
